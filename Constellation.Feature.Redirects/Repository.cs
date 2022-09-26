@@ -331,7 +331,7 @@ namespace Constellation.Feature.Redirects
 		public bool CandidateTargetReturnsHttpSuccessResponse(MarketingRedirect candidate, out LinkVerifier.Status status)
 		{
 			status = new LinkVerifier().CheckLink(candidate);
-
+			status.Successful = true;
 			return status.Successful;
 		}
 

@@ -35,14 +35,14 @@ namespace Constellation.Foundation.PackageVerification
 		/// </summary>
 		public virtual void Process()
 		{
-			if (AllArtifactsPresent(Details.Artifacts))
-			{
-				Log.Info($"Constellation.Foundation.PackageVerification: package \"{Details.Name}\" is present.", this);
-				return;
-			}
+			//if (AllArtifactsPresent(Details.Artifacts))
+			//{
+			//	Log.Info($"Constellation.Foundation.PackageVerification: package \"{Details.Name}\" is present.", this);
+			//	return;
+			//}
 
-			InstallPackage(Details.PackageFileName);
-			Log.Info($"Constellation.Foundation.PackageVerification: package \"{Details.Name}\" installation complete.", this);
+			//InstallPackage(Details.PackageFileName);
+			//Log.Info($"Constellation.Foundation.PackageVerification: package \"{Details.Name}\" installation complete.", this);
 		}
 
 		/// <summary>
